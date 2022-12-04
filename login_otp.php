@@ -22,15 +22,20 @@
             </div>
             <div class="login_otp_input_and_button">
                 <form action="" class="login_otp_phone_input_base">
-                    <input type="text" class="login_otp_phone_input" id="login_phone_input">
-                    <input type="text" class="login_otp_phone_input" id="login_phone_input">
-                    <input type="text" class="login_otp_phone_input" id="login_phone_input">
-                    <input type="text" class="login_otp_phone_input" id="login_phone_input">
+                    <input type="text" class="login_otp_phone_input" id="login_phone_input" maxlength="1">
+                    <input type="text" class="login_otp_phone_input" id="login_phone_input" maxlength="1">
+                    <input type="text" class="login_otp_phone_input" id="login_phone_input" maxlength="1">
+                    <input type="text" class="login_otp_phone_input" id="login_phone_input" maxlength="1">
                 </form>
-                <a href=""></a>
-                <button class="login_otp_button" type="button" onclick="alert('Its working')">
-                    LANJUTKAN
-                </button>
+                <div class="login_otp_kirim_ulang_otp_text">
+                    <button class="login_otp_kirim_ulang_otp_button">
+                        Kirim ulang OTP
+                    </button>
+                <a href="index_dokter.php" class="login_otp_button_clickable">
+                    <button class="login_otp_button" type="button" onclick="">
+                        LANJUTKAN
+                    </button>
+                </a>
             </div>
         </div>
     </div>
