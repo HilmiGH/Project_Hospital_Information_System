@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,8 +12,8 @@
 <body>
     <div class="login_background">
         <div class="login_middle_container">
-            <button class="login_close_button_base">
-                <img class="login_close_button" src="images/close_button_test.png" alt="close button">
+            <button class="login_close_button_base" onclick="">
+                <img class="login_close_button" src="images/login_close_button.png" alt="close button">
             </button>
             <div class="login_title">
                 Login/Register
@@ -27,14 +28,16 @@
                 Nomor Telepon
             </div>
             <div class="login_input_and_button">
-                <form action="" class="login_phone_input_base">
-                    <input type="text" class="login_phone_input" id="login_phone_input">
-                </form>
-                <a href="login_otp.php">
-                    <button class="login_button" type="button" onclick="alert('Its working')">
-                        LANJUTKAN
+                <form  action="login.php" class="login_phone_input_base" method="post">
+                    <input type="text" name="num" class="login_phone_input" id="login_phone_input" placeholder="+62">
+                    
+                <a href="login_otp.php" class="login_button_clickable">
+                    <button class="login_button" name="login" type="button" onclick="">
+                        <span>LANJUTKAN</span>
                     </button>
                 </a>
+                </form>
+                
             </div>
         </div>
     </div>
