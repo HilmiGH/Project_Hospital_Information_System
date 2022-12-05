@@ -1,0 +1,47 @@
+.top_banner_dokter {
+    background-color:#B5CBEB;
+}
+
+.dashboard_button_dokter {
+    border: 2px solid #3988FF;
+}
+
+.top_banner_pasien {
+    background-color:#F3BBBB;
+}
+
+.dashboard_button_pasien {
+    border: 2px solid #866B60;
+}
+
+.top_banner_nakes {
+    background-color:#A6DDD6;
+}
+
+.dashboard_button_nakes {
+    border: 2px solid #5f807b;
+}
+
+.top_banner_nonnakes {
+    background-color:#CDE2B8;
+}
+
+.dashboard_button_nonnakes {
+    border: 2px solid #839176;
+}
+
+.top_banner_manajer {
+    background-color:#F9DB8E;
+}
+
+.dashboard_button_manajer {
+    border: 2px solid #8d7c51;
+}
+
+.top_banner_mitra {
+    background-color:#D7C0E9;
+}
+
+.dashboard_button_mitra {
+    border: 2px solid #9484a1;
+}
