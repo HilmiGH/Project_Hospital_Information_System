@@ -55,7 +55,7 @@
             </div>
             <div class="button_base">
                 <div class="dashboard_button">
-                    <a href="" class="button_clickable">
+                    <a href="rujukan.php" class="button_clickable">
                         <div class="button_content">
                             <img class= "button_logo" src="images/dashboard_rujukan_logo.png" alt="Rujukan logo">
                         </div>
@@ -67,7 +67,7 @@
             </div>
             <div class="button_base">
                 <div class="dashboard_button">
-                    <a href="" class="button_clickable">
+                    <a href="buat_surat.php" class="button_clickable">
                         <div class="button_content">
                             <img class= "button_logo" src="images/dashboard_buat_surat_logo.png" alt="Logo Buat Surat">
                         </div>
