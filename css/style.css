@@ -269,6 +269,7 @@ body {
 
 /*
     index_dokter page
+    shared with: index pasien, index manajer, index nonnakes, index nakes, index mitra
 */
 
 .header {
@@ -292,6 +293,7 @@ body {
 }
 
 .top_banner {
+    background-color:#B5CBEB;
     height: 100px;
     padding: 37.5px;
     align-items: center;
@@ -329,8 +331,10 @@ body {
     box-sizing: border-box;
     display: block;
     padding-top: 24px;
+    border: 2px solid #3988FF;
     border-radius: 20px;
     width: 160px;
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -369,6 +373,79 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
+}
+
+/*
+    index_pasien page
+    sharing with: index dokter
+*/
+
+.top_banner_pasien {
+    background-color:#F3BBBB;
+}
+
+.dashboard_button_pasien {
+    border: 2px solid #866B60;
+}
+
+/*
+    index_nakes page
+    sharing with: index dokter
+*/
+
+.top_banner_nakes {
+    background-color:#A6DDD6;
+}
+
+.dashboard_button_nakes {
+    border: 2px solid #5f807b;
+}
+
+.main_dashboard_4_tiles{
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+/*
+    index_nonnakes page
+    sharing with: index dokter
+*/
+
+.top_banner_nonnakes {
+    background-color:#CDE2B8;
+}
+
+.dashboard_button_nonnakes {
+    border: 2px solid #839176;
+}
+
+/*
+    index_manajer page
+    sharing with: index dokter
+*/
+
+.top_banner_manajer {
+    background-color:#F9DB8E;
+}
+
+.dashboard_button_manajer {
+    border: 2px solid #8d7c51;
+}
+
+/*
+    index_mitra page
+    sharing with: index dokter
+*/
+
+.top_banner_mitra {
+    background-color:#D7C0E9;
+}
+
+.dashboard_button_mitra {
+    border: 2px solid #9484a1;
 }
 
 /*
@@ -415,7 +492,7 @@ body {
 
 /*
     konsultasi page 
-    Shared with page: visite, rujukan, buat surat,
+    Shared with page: visite, rujukan, buat surat, schedule, profile, setting, about, pasien,
 */
 
 .konsultasi_content {
@@ -813,6 +890,7 @@ body {
 /*
     rujukan page
     sharing with page: konsultasi
+    shared with: buat rujukan page
 */
 
 .rujukan_content{
@@ -952,6 +1030,627 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 18px;
+}
+
+/*
+    Schedule page
+    sharing with : konsultasi
+*/
+
+.schedule_upcoming_activities_base{
+    float: left;
+    width: 330px;
+    height:460px;
+    
+    background-color:#FFE092;
+    border-radius: 8px;
+}
+
+.schedule_upcoming_activities_content{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.schedule_upcoming_activities_title{
+    
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.schedule_upcoming_activity_add_button{
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+    left: 250px;
+    margin-bottom: 15px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.schedule_upcoming_activity_add_button_image{
+    width: auto;
+    height: 20px;
+}
+
+
+.schedule_upcoming_activity{
+    display: grid;
+    margin-bottom: 20px;
+    width: 290px;
+    height: 64px;
+}
+
+.schedule_upcoming_activity_title{
+    font-weight: bold;
+}
+
+.schedule_upcoming_activity_time{
+
+}
+
+.schedule_upcoming_activity_place{
+    margin-bottom: 5px;
+}
+
+.schedule_upcoming_activity_line{
+    width: 100%;
+    height: 5px;
+    background-color: #F0960E;
+}
+
+.schedule_calendar_base{
+    float: left;
+    margin-left: 30px;
+    width: 830px;
+    height: 460px;
+
+    background-color: rgb(255, 224, 146, 0.19);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.schedule_calendar_header{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.schedule_calendar_title{
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.schedule_calendar_previous_month_button{
+    display: inline-block;
+    float: right;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.schedule_calendar_previous_month_image{
+    height: 20px;
+    width: auto;
+}
+
+.schedule_calendar_month{
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #F0960E;
+}
+
+.schedule_calendar_following_month_button{
+    float: right;
+    display: inline-block;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.schedule_calendar_following_month_image{
+    width: 20px;
+    height: auto;
+}
+
+.schedule_calendar_grid{
+    display: grid;
+    height: 380px;
+    margin-top: 10px;
+    
+    grid-template-columns: 107.5px 107.5px 107.5px 107.5px 107.5px 107.5px 107.5px;
+}
+
+.schedule_calendar_grid_container{
+    border: 0.1px solid black;
+}
+
+.schedule_calendar_grid_container_isactive{
+    width: 20px;
+    height: 20px;
+}
+
+#schedule_calendar_grid_container_isactive_true{
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 100%;
+    background-color: #FF8A8A;
+}
+
+#schedule_calendar_grid_container_isactive_false{
+
+}
+
+.schedule_calendar_grid_container_date{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+
+.schedule_calendar_grid_container_content{
+    margin: 10px;
+    margin-top: 10px;
+}
+
+
+/*
+    profile page
+    sharing with : konsultasi
+*/
+
+.profile_main_logo{
+    width: auto;
+    height: 100px;
+}
+
+.profile_main_profile{
+    display: inline-block;
+
+}
+
+.profile_main_name{
+    display: inline-block;
+    position: relative;
+    bottom: 60px;
+    margin-left: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.profile_main_role{
+    display: inline-block;
+    position: relative;
+    right: 55px;
+    bottom: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.profile_role{
+    display: inline-block;
+    position: relative;
+    left: 250px;
+    bottom: 70px;
+}
+
+.profile_role_logo{
+    height: 25px;
+    padding: 5px;
+
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.profile_role_title{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 25px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.profile_role_content{
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    bottom: 2.5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.profile_telepon{
+    display: inline-block;
+    position: relative;
+    left: 115px;
+}
+
+.profile_telepon_logo{
+    height: 25px;
+    padding: 5px;
+
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.profile_telepon_nomor{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    bottom: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.profile_email{
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    bottom: 70px;
+}
+
+.profile_email_logo{
+    height: 25px;
+    padding: 5px;
+
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.profile_email_address{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    bottom: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.profile_NIK_NIP{
+    display: inline-block;
+    position: relative;
+    left: 155px;
+}
+
+.profile_NIK_NIP_logo{
+    height: 25px;
+    padding: 5px;
+
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.profile_NIK_NIP_nomor{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    bottom: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.profile_info_content{
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.profile_info_title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.profile_info_subtitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.profile_info_tanggal_lahir_div{
+    margin-top: 15px;
+    margin-bottom: 15spx;
+}
+
+.profile_info_tanggal_logo{
+    height: 30px;
+}
+
+.profile_info_tanggal_title{
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.profile_info_tanggal_input_base {
+    margin-left: 100px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-top: 2.5px;
+}
+
+.profile_info_tanggal_input {
+    width: 290px;
+    height: 30px;
+
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+.profile_info_tanggal_lahir_tambahan{
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    bottom: 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.profile_info_rekam_medis_input_base {
+    margin-left: 100px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-top: 2.5px;
+}
+
+.profile_info_rekam_medis_input {
+    width: 290px;
+    height: 30px;
+
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+.profile_info_tinggi_badan_input_base {
+    margin-left: 102.5px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-top: 2.5px;
+}
+
+.profile_info_tinggi_badan_input {
+    width: 290px;
+    height: 30px;
+
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+.profile_info_berat_badan_input_base {
+    margin-left: 110px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-top: 2.5px;
+}
+
+.profile_info_berat_badan_input {
+    width: 290px;
+    height: 30px;
+
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+.profile_info_golongan_darah_input_base {
+    margin-left: 87.5px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-top: 2.5px;
+}
+
+.profile_info_golongan_darah_input {
+    width: 290px;
+    height: 30px;
+
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+
+/*
+For Settings page
+sharing with : konsultasi
+shared with : about, pasien
+*/
+
+.settings_option_base{
+    padding: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.settings_dark_mode_image{
+    height: 30px;
+}
+
+.settings_dark_mode_title{
+    position: relative;
+    left: 70px;
+    bottom: 35px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.settings_dark_mode_subtitle{
+    position: relative;
+    left: 70px;
+    bottom: 35px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.settings_dark_mode_input_base {
+    position: relative;
+    bottom: 20px;
+    left: 70px;
+    margin-top: 2.5px;
+}
+
+.settings_dark_mode_input {
+    width: 130px;
+    height: 30px;
+
+    border: 2px solid #B8B8B8;
+    border-radius: 8px;
+}
+
+.settings_language_input_base {
+    position: relative;
+    bottom: 20px;
+    left: 70px;
+    margin-top: 2.5px;
+}
+
+.settings_language_input {
+    width: 130px;
+    height: 30px;
+
+    border: 2px solid #B8B8B8;
+    border-radius: 8px;
+}
+
+/*
+For About page
+sharing with : settings, konsultasi
+*/
+
+
+/*
+For pasien page
+sharing with : konsultasi
+*/
+
+.pasien_content{
+    padding: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.pasien_content_title{
+    margin-bottom: 5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.pasien_content_poliklinik_input_base{
+    margin-bottom: 30px;
+}
+
+.pasien_content_poliklinik_input {
+    width: 275px;
+    height: 30px;
+
+    border: 2px solid #B8B8B8;
+    border-radius: 8px;
+}
+
+.pasien_content_table_base{
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.pasien_content_table_header{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.pasien_content_table_row{
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.pasien_content_table_end{
+    border-bottom: 1px solid black;;
 }
 
 /*
