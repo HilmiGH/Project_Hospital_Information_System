@@ -1,0 +1,72 @@
+<div class="dashboard_button">
+                <a href="">
+                    <div class="button_content">
+                        <img class= "button_logo" src="images/medicine_test.png" alt="Medicine logo">
+                    </div>
+                </a>
+            </div>
+            <div class="dashboard_button">
+                <a href="">
+                    <div class="button_content">
+                        <img class= "button_logo" src="images/medicine_test.png" alt="Medicine logo">
+                    </div>
+                </a>
+            </div>
+            <div class="dashboard_button">
+                <a href="">
+                    <div class="button_content">
+                        <img class= "button_logo" src="images/medicine_test.png" alt="Medicine logo">
+                    </div>
+                </a>
+            </div>
+
+
+
+/* On mouse-over, add a grey background color */
+.visite_jadwal_visite_list_kondisi:hover input ~ .visite_jadwal_visite_list_kondisi_checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .visite_jadwal_visite_list_kondisi input:checked ~ .visite_jadwal_visite_list_kondisi_checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .visite_jadwal_visite_list_kondisi_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .visite_jadwal_visite_list_kondisi input:checked ~ .visite_jadwal_visite_list_kondisi_checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .visite_jadwal_visite_list_kondisi .visite_jadwal_visite_list_kondisi_checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  <div class="profile_telepon">
+    <img class="profile_telepon_logo" src="images/profile_telephone_logo.png" alt="">
+    <div class ="profile_telepon_nomor">+62 1234567890</div>
+</div>
+<div class="profile_email">
+    <img class="profile_email_logo" src="" alt="">
+    <div class="profile_email_address">nama@rs.com</div>
+</div>
+<div class="profile_NIK_NIP">
+    <img class="profile_NIK_NIP_logo" src="" alt="">
+    <div class="profile_NIK_NIP_nomor">[NIK/NIP]</div>
+</div>
