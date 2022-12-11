@@ -7,6 +7,7 @@
     <title>Login OTP</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
 <div class="login_otp_background">

@@ -7,6 +7,7 @@
     <title>Dashboard Pasien</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="js/script.js"></script>
 </head>
 <body>

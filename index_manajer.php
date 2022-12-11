@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
     <script src="js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <div class="header">
