@@ -45,7 +45,7 @@
             </div>
             <div class="button_base">
                 <div class="dashboard_button dashboard_button_pasien">
-                    <a href="" class="button_clickable">
+                    <a href="obat.php" class="button_clickable">
                         <div class="button_content">
                             <img class= "button_logo" src="images/dashboard_obat_logo.png" alt="Logo Visite">
                         </div>
