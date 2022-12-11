@@ -46,7 +46,7 @@ body {
     right: 0;
     bottom: 0;
     width: 400px;
-    height: 375px;
+    height: 400px;
     box-sizing: border-box;
     border: 2px solid #FFFFFF;
     border-radius: 20px;
@@ -159,7 +159,7 @@ body {
     right: 0;
     bottom: 0;
     width: 400px;
-    height: 375px;
+    height: 440px;
     box-sizing: border-box;
     border: 2px solid #FFFFFF;
     border-radius: 20px;
@@ -278,6 +278,7 @@ body {
 }
 
 .logo {
+    font-family: 'Poppins';
     display: inline-block;
     margin-top: 20px;
     margin-left: 40px;
@@ -458,6 +459,8 @@ body {
 }
 
 .system_information_logo {
+    font-family: 'Poppins';
+    font-weight: 600;
     display: inline-block;
     margin-top: 20px;
     margin-left: 70px;
@@ -555,7 +558,7 @@ body {
 .konsultasi_informasi_pasien_base {
     float: left;
     margin-left: 30px;
-    width: 830px;
+    width: 860px;
     height: 460px;
 
     background-color: rgba(255, 224, 146, 0.3);
@@ -735,6 +738,7 @@ body {
 }
 
 .konsultasi_informasi_pasien_footer_Rujukan{
+    font-family: 'Poppins';
     float: left;
 }
 
@@ -755,6 +759,7 @@ body {
 }
 
 .konsultasi_informasi_pasien_footer_Buat_Surat{
+    font-family: 'Poppins';
     float: right;
 }
 
@@ -1054,8 +1059,6 @@ body {
 }
 
 .schedule_upcoming_activities_title{
-    
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -1094,14 +1097,16 @@ body {
 }
 
 .schedule_upcoming_activity_title{
+    font-family: 'Poppins';
     font-weight: bold;
 }
 
 .schedule_upcoming_activity_time{
-
+    font-family: 'Poppins';
 }
 
 .schedule_upcoming_activity_place{
+    font-family: 'Poppins';
     margin-bottom: 5px;
 }
 
@@ -1114,7 +1119,7 @@ body {
 .schedule_calendar_base{
     float: left;
     margin-left: 30px;
-    width: 830px;
+    width: 860px;
     height: 460px;
 
     background-color: rgb(255, 224, 146, 0.19);
@@ -1194,7 +1199,7 @@ body {
     height: 380px;
     margin-top: 10px;
     
-    grid-template-columns: 107.5px 107.5px 107.5px 107.5px 107.5px 107.5px 107.5px;
+    grid-template-columns: 115px 115px 115px 115px 115px 115px 115px;
 }
 
 .schedule_calendar_grid_container{
@@ -1225,6 +1230,7 @@ body {
 }
 
 .schedule_calendar_grid_container_content{
+    font-family: 'Poppins';
     margin: 10px;
     margin-top: 10px;
 }
@@ -1736,7 +1742,7 @@ sharing with : pasien
     float: left;
     margin-left: 30px;
     width: 870px;
-    height: 450px;
+    height: 500px;
 
     background-color: rgba(255, 255, 255, 0.3);
 
