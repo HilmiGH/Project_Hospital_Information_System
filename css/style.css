@@ -29,6 +29,12 @@ body {
 }
 
 /*
+Button animation
+*/
+
+
+
+/*
     Login page
 */
 
@@ -475,6 +481,18 @@ body {
     float: right;
 }
 
+.system_information_logout_button:hover {
+    animation-name: logout_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes logout_button_ani {
+    from {width:110px; height: 40px;}
+    to {width:120px; height: 42px;}
+}
+
 .system_information_header_line {
     width: 100%;
     height: 1px;
@@ -516,6 +534,20 @@ body {
 .konsultasi_back_button {
     width: auto;
     height: 20px;
+    float: left;
+    margin-left: 0px;
+}
+
+.konsultasi_back_button:hover {
+    animation-name: back_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes back_button_ani {
+    from {margin-left: 0px;}
+    to {margin-left: -10px;}
 }
 
 .konsultasi_title {
@@ -1199,7 +1231,7 @@ body {
     height: 380px;
     margin-top: 10px;
     
-    grid-template-columns: 115px 115px 115px 115px 115px 115px 115px;
+    grid-template-columns: 107.5px 107.5px 107.5px 107.5px 107.5px 107.5px 107.5px; 
 }
 
 .schedule_calendar_grid_container{
@@ -1803,4 +1835,75 @@ sharing with : pasien
 
 .janji_tanggal_input_base {
     margin-top: 2.5px;
+}
+
+.obat_hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 0.5px solid #3988FF;
+}
+
+.obat_heading {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.obat_subheading {
+    font-family: 'Poppins';
+}
+
+.obat_body {
+    font-family: 'Poppins';
+    color:#5f807b;
+}
+
+.obat_right {
+    float: right;
+}
+
+.obat_tab {
+    margin-top: 4px;
+    margin-left: 58px;
+}
+
+.data_title {
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 600;
+    color:#3988FF;
+}
+
+.data_heading {
+    font-family: 'Poppins';
+    font-weight: 1000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.data_grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px; 
+}
+
+.data_subheading {
+    text-decoration: underline;
+    font-family: 'Poppins';
+}
+
+.data_body {
+    font-family: 'Poppins';
+}
+
+.data_calendar_grid{
+    display: grid;
+    height: 380px;
+    margin-top: 50px;
+    
+    grid-template-columns: 140px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px;
+}
+
+.schedule_calendar_grid_container_content_libur{
+    color:#ff4747;
 }
