@@ -141,6 +141,25 @@ body {
     padding-bottom: 30px;
 }
 
+.login_button:hover {
+    cursor: pointer;
+    animation-name: login_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes login_button_ani {
+    from {background: #3988FF;}
+    to {background: #85b6ff;}
+}
+
+.login_otp_button:hover {
+    cursor: pointer;
+    animation-name: login_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
 /*
     Login_OTP page
 */
@@ -267,6 +286,13 @@ body {
     padding-bottom: 15px;
 }
 
+.logout_button:hover {
+    animation-name: logout_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
 /*
     index_dokter page
     shared with: index pasien, index manajer, index nonnakes, index nakes, index mitra
@@ -278,6 +304,7 @@ body {
 }
 
 .logo {
+    font-family: 'Poppins';
     display: inline-block;
     margin-top: 20px;
     margin-left: 40px;
@@ -458,10 +485,23 @@ body {
 }
 
 .system_information_logo {
+    font-family: 'Poppins';
+    font-weight: 600;
     display: inline-block;
     margin-top: 20px;
     margin-left: 70px;
     width: auto;
+}
+
+.system_information_logout_button:hover {
+    animation-name: logout_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes logout_button_ani {
+    from {width:110px; height: 40px;}
+    to {width:120px; height: 42px;}
 }
 
 .system_information_logout_button {
@@ -479,7 +519,7 @@ body {
 }
 
 .system_information_footer {
-    position:absolute;
+    position:fixed;
     bottom: 0;
     height: 40px;
     width: 100%;
@@ -487,12 +527,8 @@ body {
 }
 
 /*
-    setting page
-*/
-
-/*
     konsultasi page 
-    Shared with page: visite, rujukan, buat surat, schedule, profile, setting, about, pasien,
+    Shared with page: visite, rujukan, buat surat, schedule, profile, setting, about, pasien, pembayaran, data, feedback
 */
 
 .konsultasi_content {
@@ -513,7 +549,20 @@ body {
 .konsultasi_back_button {
     width: auto;
     height: 20px;
+    float: left;
+    margin-left: 0px;
 }
+.konsultasi_back_button:hover {
+    animation-name: back_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes back_button_ani {
+    from {margin-left: 0px;}
+    to {margin-left: -10px;}
+}
+
 
 .konsultasi_title {
     display: inline-flex;
@@ -588,7 +637,7 @@ body {
     display: inline-flex;
     position: relative;
     margin-left: 20px;
-    right: 120px;
+    right: 135px;
     bottom: 15px;
 
     font-family: 'Poppins';
@@ -601,7 +650,7 @@ body {
     display: inline-flex;
     position: relative;
     bottom: 45px;
-    left: 160px;
+    left: 100px;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -627,7 +676,7 @@ body {
     display: inline-flex;
     position: relative;
     bottom: 45px;
-    left: 270px;
+    left: 225px;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -735,6 +784,7 @@ body {
 }
 
 .konsultasi_informasi_pasien_footer_Rujukan{
+    font-family: 'Poppins';
     float: left;
 }
 
@@ -755,6 +805,7 @@ body {
 }
 
 .konsultasi_informasi_pasien_footer_Buat_Surat{
+    font-family: 'Poppins';
     float: right;
 }
 
@@ -928,10 +979,6 @@ body {
     border-radius: 8px;
 }
 
-.rujukan_jaminan_pasien_input_base {
-    margin-top: 2.5px;
-}
-
 .rujukan_jaminan_pasien{
     display: inline-block;
     position: relative;
@@ -942,6 +989,22 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
+}
+
+.rujukan_buat_rujukan_button:hover {
+    cursor: pointer;
+    animation-name: rujukan_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes rujukan_button_ani {
+    from {width: 20%; height: 40px;}
+    to {width: 21%; height: 45px;}
+}
+
+.rujukan_jaminan_pasien_input_base {
+    margin-top: 2.5px;
 }
 
 .rujukan_jenis{
@@ -990,7 +1053,7 @@ body {
 }
 
 .rujukan_buat_rujukan_button {
-    display: inline-block;
+    display:inline-block;
     position: relative;
     left: 450px;
     box-sizing: border-box;
@@ -1094,14 +1157,16 @@ body {
 }
 
 .schedule_upcoming_activity_title{
+    font-family: 'Poppins';
     font-weight: bold;
 }
 
 .schedule_upcoming_activity_time{
-
-}
+    font-family: 'Poppins';
+}   
 
 .schedule_upcoming_activity_place{
+    font-family: 'Poppins';
     margin-bottom: 5px;
 }
 
@@ -1225,6 +1290,7 @@ body {
 }
 
 .schedule_calendar_grid_container_content{
+    font-family: 'Poppins';
     margin: 10px;
     margin-top: 10px;
 }
@@ -1308,7 +1374,7 @@ body {
 .profile_telepon{
     display: inline-block;
     position: relative;
-    left: 115px;
+    left: 95px;
 }
 
 .profile_telepon_logo{
@@ -1357,7 +1423,7 @@ body {
 .profile_NIK_NIP{
     display: inline-block;
     position: relative;
-    left: 155px;
+    left: 130px;
 }
 
 .profile_NIK_NIP_logo{
@@ -1420,15 +1486,12 @@ body {
     font-size: 16px;
 }
 
-.profile_info_tanggal_input_base {
+.profile_info_tanggal_value{
     margin-left: 100px;
     display: inline-block;
     position: relative;
     bottom: 10px;
     margin-top: 2.5px;
-}
-
-.profile_info_tanggal_input {
     width: 290px;
     height: 30px;
 
@@ -1448,31 +1511,26 @@ body {
     font-size: 16px;
 }
 
-.profile_info_rekam_medis_input_base {
+.profile_info_rekam_medis_value{
     margin-left: 100px;
     display: inline-block;
     position: relative;
     bottom: 10px;
     margin-top: 2.5px;
-}
-
-.profile_info_rekam_medis_input {
     width: 290px;
     height: 30px;
-
+    
     border: 2px solid #B5CBEB;
     border-radius: 8px;
 }
 
-.profile_info_tinggi_badan_input_base {
-    margin-left: 102.5px;
+.profile_info_tinggi_badan_value{
+    margin-left: 100px;
     display: inline-block;
     position: relative;
     bottom: 10px;
     margin-top: 2.5px;
-}
-
-.profile_info_tinggi_badan_input {
+    
     width: 290px;
     height: 30px;
 
@@ -1480,15 +1538,12 @@ body {
     border-radius: 8px;
 }
 
-.profile_info_berat_badan_input_base {
-    margin-left: 110px;
+.profile_info_berat_badan_value{
+    margin-left: 105px;
     display: inline-block;
     position: relative;
     bottom: 10px;
     margin-top: 2.5px;
-}
-
-.profile_info_berat_badan_input {
     width: 290px;
     height: 30px;
 
@@ -1496,27 +1551,23 @@ body {
     border-radius: 8px;
 }
 
-.profile_info_golongan_darah_input_base {
-    margin-left: 87.5px;
+.profile_info_golongan_darah_value{
+    margin-left: 72.5px;
     display: inline-block;
     position: relative;
     bottom: 10px;
     margin-top: 2.5px;
-}
-
-.profile_info_golongan_darah_input {
     width: 290px;
     height: 30px;
 
     border: 2px solid #B5CBEB;
     border-radius: 8px;
 }
-
 
 /*
 For Settings page
 sharing with : konsultasi
-shared with : about, pasien
+shared with : about, pasien, pembayaran
 */
 
 .settings_option_base{
@@ -1639,8 +1690,7 @@ sharing with : konsultasi
 .pasien_content_table_row{
     padding: 10px;
     text-align: center;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    
 
     font-family: 'Poppins';
     font-style: normal;
@@ -1653,9 +1703,285 @@ sharing with : konsultasi
     border-bottom: 1px solid black;;
 }
 
+.pasien_content_table_row_button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.pasien_content_table_row_button_logo{
+    height: 30px;
+}
+
+.pasien_content_table_row_each{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.pasien_content_table_row_without_right{
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid black;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.pasien_content_table_row_each_final{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#pasien_content_active{
+}
+
+#pasien_content_inactive{
+    visibility: hidden;
+}
+
 /*
-For Testing
+For pembayaran page
+sharing with : settings, konsultasi
 */
+
+.pembayaran_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.pembayaran_title_logo{
+    height: 40px;
+}
+
+.pembayaran_title_text{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-left: 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.pembayaran_isi_base{
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: #FFFFFF;
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+.pembayaran_isi_details_base{
+
+}
+
+.pembayaran_isi_details{
+
+}
+
+.pembayaran_isi_details_title{
+    display: inline-block;
+    color: #7E7D7D;
+    margin-bottom: 5px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.pembayaran_isi_details_harga{
+    display: inline-block;
+    float: right;
+    color: #7E7D7D;
+    margin-bottom: 5px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.pembayaran_isi_total_title{
+    display: inline-block;
+    margin-top: 5px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.pembayaran_isi_total_harga{
+    display: inline-block;
+    float: right;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.pembayaran_jenis{
+
+}
+
+.pembayaran_jenis_logo{
+    height: 30px;
+}
+
+.pembayaran_jenis_title{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-left: 10px;
+}
+
+.pembayaran_jenis_custom_select {
+    float: right;
+	position: relative;
+	width: 300px;
+	margin-right: 1rem;
+}
+
+.pembayaran_jenis_custom_select[open] {
+	z-index: 1;
+}
+
+.pembayaran_jenis_radios {
+	padding: 1rem;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #ddd;
+	list-style: none;
+}
+
+.pembayaran_jenis_radios::-webkit-details-marker {
+	display: none;
+}
+
+.pembayaran_jenis_custom_select[open] .pembayaran_jenis_radios:before {
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.pembayaran_jenis_radios:after {
+	content: '';
+	display: inline-block;
+	float: right;
+	width: .5rem;
+	height: .5rem;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(45deg) translate(50%, 0%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms
+}
+
+.pembayaran_jenis_radios:focus {
+	outline: none;
+}
+
+.pembayaran_jenis_custom_select[open] .pembayaran_jenis_radios:after {
+	transform: rotate(-45deg) translate(0%, 0%);
+}
+
+.pembayaran_jenis_list {
+	width: 100%;
+	background: #ddd;
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.pembayaran_jenis_sublist {
+	margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.pembayaran_jenis_sublist:first-child {
+	padding-top: 0;
+}
+
+.pembayaran_jenis_sublist:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+/* FAKE SELECT */
+
+.pembayaran_jenis_radios.radios {
+	counter-reset: radios;
+}
+
+.pembayaran_jenis_radios.radios:before {
+	content: var(--selection);
+}
+
+input[type=radio] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+}
+
+input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+
+input[type=radio]:after {
+	content: attr(title);
+	display: inline;
+	font-size: 1rem;
+}
+
+.pembayaran_jenis_list.list {
+	counter-reset: labels;
+}
+
+.pembayaran_jenis_label {
+	width: 100%;
+	display: flex;
+	cursor: pointer;
+	justify-content: space-between;
+}
+
+.pembayaran_jenis_label span {
+	--display: none;
+	display: var(--display);
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #727272;
+	border-radius: 3px;
+}
+
 
 /*
 For buat janji page
@@ -1785,6 +2111,10 @@ sharing with : pasien
 
 .janji_cari_button:hover {
     cursor: pointer;
+    animation-name: rujukan_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 
 .janji_tanggal_input {
@@ -1798,3 +2128,199 @@ sharing with : pasien
 .janji_tanggal_input_base {
     margin-top: 2.5px;
 }
+
+/*
+For data page
+sharing with : konsultasi
+*/
+
+.data_title {
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 600;
+    color:#3988FF;
+}
+
+.data_heading {
+    font-family: 'Poppins';
+    font-weight: 1000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.data_grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px; 
+}
+
+.data_subheading {
+    text-decoration: underline;
+    font-family: 'Poppins';
+}
+
+.data_body {
+    font-family: 'Poppins';
+}
+
+.data_calendar_grid{
+    display: grid;
+    height: 380px;
+    margin-top: 50px;
+    
+    grid-template-columns: 140px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px;
+}
+
+.schedule_calendar_grid_container_content_libur{
+    color:#ff4747;
+}
+
+/*
+For feedback page
+sharing with : konsultasi, pembayaran
+*/
+
+.feedback_title{
+    margin-top: 30px;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.feedback_title_logo{
+    height: 40px;
+}
+
+.feedback_title_text{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-left: 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.feedback_isi_base{
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: #FFFFFF;
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+.feedback_isi_details_base{
+
+}
+
+.feedback_isi_details{
+
+}
+
+.feedback_isi_details_title{
+    display: inline-block;
+    position: relative;
+    color: black;
+    margin-bottom: 5px;
+    bottom: 15px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.feedback_isi_details_rating{
+    display: inline-block;
+}
+
+.rate {
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.feedback_comment_input_base {
+    margin-top: 2.5px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.feedback_comment_input {
+    width: 100%;
+    height: 125px;
+
+    border: 2px solid #B5CBEB;
+    border-radius: 8px;
+}
+
+/*
+For Obat Page
+*/
+
+.obat_hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 0.5px solid #3988FF;
+}
+
+.obat_heading {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.obat_subheading {
+    font-family: 'Poppins';
+}
+
+.obat_body {
+    font-family: 'Poppins';
+    color:#5f807b;
+}
+
+.obat_right {
+    float: right;
+}
+
+.obat_tab {
+    margin-top: 4px;
+    margin-left: 58px;
+}
+
+/*
+For Testing
+*/
