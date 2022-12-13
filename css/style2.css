@@ -62,7 +62,7 @@ This is used as a temporary css, everything is subject to change
 
 @keyframes index_button_dokter_ani {
     from {border: 2px solid #3988FF}
-    to {border: 3px solid #0066ff}
+    to {border: 4px solid #0066ff}
 }
 
 .dashboard_button_manajer:hover {
@@ -75,7 +75,7 @@ This is used as a temporary css, everything is subject to change
 
 @keyframes index_button_manajer_ani {
     from {border: 2px solid #8d7c51}
-    to {border: 3px solid #695d3c}
+    to {border: 4px solid #695d3c}
 }
 
 .dashboard_button_pasien:hover {
@@ -88,7 +88,7 @@ This is used as a temporary css, everything is subject to change
 
 @keyframes index_button_pasien_ani {
     from {border: 2px solid #866B60}
-    to {border: 3px solid #705950}
+    to {border: 4px solid #705950}
 }
 
 .dashboard_button_nakes:hover {
@@ -101,7 +101,7 @@ This is used as a temporary css, everything is subject to change
 
 @keyframes index_button_nakes_ani {
     from {border: 2px solid #5f807b}
-    to {border: 3px solid #455e5a}
+    to {border: 4px solid #455e5a}
 }
 
 .dashboard_button_nonnakes:hover {
@@ -114,7 +114,7 @@ This is used as a temporary css, everything is subject to change
 
 @keyframes index_button_nonnakes_ani {
     from {border: 2px solid #839176}
-    to {border: 3px solid #646e5a}
+    to {border: 4px solid #646e5a}
 }
 
 .dashboard_button_mitra:hover {
@@ -127,5 +127,5 @@ This is used as a temporary css, everything is subject to change
 
 @keyframes index_button_mitra_ani {
     from {border: 2px solid #9484a1}
-    to {border: 3px solid #6c6175}
+    to {border: 4px solid #6c6175}
 }
