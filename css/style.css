@@ -132,9 +132,21 @@ Button animation
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    background: #3988FF;
     border: 2px solid #3988FF;
     border-radius: 5px;
+}
+
+.login_button:hover {
+    cursor: pointer;
+    animation-name: login_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes login_button_ani {
+    from {background: #3988FF;}
+    to {background: #85b6ff;}
 }
 
 .login_phone_input {
@@ -262,6 +274,14 @@ Button animation
     border-radius: 5px;
 }
 
+.login_otp_button:hover {
+    cursor: pointer;
+    animation-name: login_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
 .login_otp_phone_input {
     width: 48px;
     height: 60px;
@@ -297,6 +317,13 @@ Button animation
     width: 110px;
     height: 40px;
     float: right;
+}
+
+.logout_button:hover {
+    animation-name: logout_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 
 .top_banner {
@@ -1042,6 +1069,19 @@ Button animation
     background: #FDB909;
     border: 2px solid #FDB909;
     border-radius: 5px;
+}
+
+.rujukan_buat_rujukan_button:hover {
+    cursor: pointer;
+    animation-name: rujukan_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes rujukan_button_ani {
+    from {width: 20%; height: 40px;}
+    to {width: 21%; height: 45px;}
 }
 
 /*
@@ -1823,6 +1863,10 @@ sharing with : pasien
 
 .janji_cari_button:hover {
     cursor: pointer;
+    animation-name: rujukan_button_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 
 .janji_tanggal_input {

@@ -51,3 +51,81 @@ This is used as a temporary css, everything is subject to change
 .dashboard_button_mitra {
     border: 2px solid #9484a1;
 }
+
+.dashboard_button_dokter:hover {
+    cursor: pointer;
+    animation-name: index_button_dokter_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes index_button_dokter_ani {
+    from {border: 2px solid #3988FF}
+    to {border: 3px solid #0066ff}
+}
+
+.dashboard_button_manajer:hover {
+    cursor: pointer;
+    animation-name: index_button_manajer_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes index_button_manajer_ani {
+    from {border: 2px solid #8d7c51}
+    to {border: 3px solid #695d3c}
+}
+
+.dashboard_button_pasien:hover {
+    cursor: pointer;
+    animation-name: index_button_pasien_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes index_button_pasien_ani {
+    from {border: 2px solid #866B60}
+    to {border: 3px solid #705950}
+}
+
+.dashboard_button_nakes:hover {
+    cursor: pointer;
+    animation-name: index_button_nakes_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes index_button_nakes_ani {
+    from {border: 2px solid #5f807b}
+    to {border: 3px solid #455e5a}
+}
+
+.dashboard_button_nonnakes:hover {
+    cursor: pointer;
+    animation-name: index_button_nonnakes_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes index_button_nonnakes_ani {
+    from {border: 2px solid #839176}
+    to {border: 3px solid #646e5a}
+}
+
+.dashboard_button_mitra:hover {
+    cursor: pointer;
+    animation-name: index_button_mitra_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes index_button_mitra_ani {
+    from {border: 2px solid #9484a1}
+    to {border: 3px solid #6c6175}
+}
