@@ -7,6 +7,7 @@
     <title>Buat Surat</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <div class="system_information_header">
@@ -64,7 +65,6 @@
             <button class="rujukan_buat_rujukan_button" name="login" type="submit" onclick="">
                 <span>Buat Rujukan</span>
             </button>
-            
         </div>
     </div>
     <div class="system_information_footer">

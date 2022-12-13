@@ -7,6 +7,7 @@
     <title>Visite</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <div class="system_information_header">
@@ -25,7 +26,7 @@
                 <img src="images/system_information_back_button.png" alt="Back button" class="konsultasi_back_button">
             </a>
             <div class="konsultasi_title">
-                Konsultasi
+                Visite
             </div>
         </div>
         <div class="konsultasi_nomor_urut_pasien_base">

@@ -7,6 +7,7 @@
     <title>Profile</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <div class="system_information_header">
@@ -54,39 +55,29 @@
             <div class="profile_info_tanggal_lahir_div">
                 <img class="profile_info_tanggal_logo" src="images/profile_info_calendar_logo.png" alt="">
                 <span class="profile_info_tanggal_title">Tanggal Lahir</span>
-                <form  action="" class="profile_info_tanggal_input_base" method="post">
-                    <input type="text" class="profile_info_tanggal_input">
-                </form>
+                <div class="profile_info_tanggal_value">12/12/2012</div>
             </div>
             <div class="profile_info_tanggal_lahir_div">
                 <img class="profile_info_tanggal_logo" src="images/profile_info_rekam_medis_logo.png" alt="">
                 <span class="profile_info_tanggal_title">Rekam Medis</span>
-                <form  action="" class="profile_info_rekam_medis_input_base" method="post">
-                    <input type="text" class="profile_info_rekam_medis_input">
-                </form>
+                <div class="profile_info_rekam_medis_value">Sehat</div>
             </div>   
             <div class="profile_info_tanggal_lahir_div">
                 <img class="profile_info_tanggal_logo" src="images/profile_info_tinggi_badan_logo.png" alt="">
                 <span class="profile_info_tanggal_title">Tinggi Badan</span>
-                <form  action="" class="profile_info_tinggi_badan_input_base" method="post">
-                    <input type="text" class="profile_info_tinggi_badan_input">
-                </form>
+                <div class="profile_info_tinggi_badan_value">168</div>
                 <div class="profile_info_tanggal_lahir_tambahan">cm</div>
             </div> 
             <div class="profile_info_tanggal_lahir_div">
                 <img class="profile_info_tanggal_logo" src="images/profile_info_berat_badan_logo.png" alt="">
                 <span class="profile_info_tanggal_title">Berat Badan</span>
-                <form  action="" class="profile_info_berat_badan_input_base" method="post">
-                    <input type="text" class="profile_info_berat_badan_input">
-                </form>
+                <div class="profile_info_berat_badan_value">57</div>
                 <div class="profile_info_tanggal_lahir_tambahan">kg</div>
             </div> 
             <div class="profile_info_tanggal_lahir_div">
                 <img class="profile_info_tanggal_logo" src="images/profile_info_golongan_darah_logo.png" alt="">
                 <span class="profile_info_tanggal_title">Golongan darah</span>
-                <form  action="" class="profile_info_golongan_darah_input_base" method="post">
-                    <input type="text" class="profile_info_golongan_darah_input">
-                </form>
+                <div class="profile_info_golongan_darah_value">A</div>
             </div>     
         </div>
     </div>

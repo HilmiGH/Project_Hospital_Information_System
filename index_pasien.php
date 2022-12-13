@@ -7,6 +7,7 @@
     <title>Dashboard Pasien</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -44,7 +45,7 @@
             </div>
             <div class="button_base">
                 <div class="dashboard_button dashboard_button_pasien">
-                    <a href="" class="button_clickable">
+                    <a href="obat.php" class="button_clickable">
                         <div class="button_content">
                             <img class= "button_logo" src="images/dashboard_obat_logo.png" alt="Logo Visite">
                         </div>
@@ -56,7 +57,7 @@
             </div>
             <div class="button_base">
                 <div class="dashboard_button dashboard_button_pasien">
-                    <a href="" class="button_clickable">
+                    <a href="pembayaran.php" class="button_clickable">
                         <div class="button_content">
                             <img class= "button_logo" src="images/dashboard_pembayaran_logo.png" alt="Rujukan logo">
                         </div>
@@ -68,7 +69,7 @@
             </div>
             <div class="button_base">
                 <div class="dashboard_button dashboard_button_pasien">
-                    <a href="" class="button_clickable">
+                    <a href="feedback.php" class="button_clickable">
                         <div class="button_content">
                             <img class= "button_logo" src="images/dashboard_feedback_logo.png" alt="Logo Buat Surat">
                         </div>

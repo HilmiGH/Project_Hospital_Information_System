@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
     <script src="js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <div class="header">
@@ -32,7 +33,7 @@
         <div class="main_dashboard_4_tiles">
             <div class="button_base">
                 <div class="dashboard_button dashboard_button_nakes">
-                    <a href="" class="button_clickable">
+                    <a href="data.php" class="button_clickable">
                         <div class="button_content">
                             <img class= "button_logo" src="images/dashboard_data_logo.png" alt="Logo Konsultasi">
                         </div>
