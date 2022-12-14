@@ -2525,6 +2525,163 @@ input[type=radio]:after {
 	border-radius: 3px;
 }
 
+/*
+    laporan page
+*/
+
+.laporan_main_base{
+    float: left;
+    width: 1000px;
+    height: 570px;
+    
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.laporan_main_content{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.laporan_list_base{
+    float: left;
+    margin-left: 30px;
+    width: 330px;
+    height: 90px;
+
+    background-color: #B5CBEB;
+    border-radius: 8px;
+}
+
+.laporan_list_base:hover {
+    cursor: pointer;
+}
+
+.laporan_list_header{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-family: 'Poppins';
+}
+
+.laporan_main_boxtitle {
+    margin-top: 15px;
+    font-family: 'Poppins';
+}
+
+.laporan_list_body{
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.laporan_main_title {
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    color: #3988FF;
+}
+
+.laporan_list_dropdownarrow {
+    margin-left: 50px;
+    width: 20px;
+    height: 12px;
+}
+
+.laporan_main_polinap {
+    display: inline-block;
+}
+
+.laporan_main_poli {
+    float: left;
+    margin-top: 20px;
+    margin-left: 190px;
+    width: 270px;
+    height: 132px;
+
+    background-color: #C9EEB2;
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.laporan_main_poli:hover {
+    cursor: pointer;
+}
+
+.laporan_main_inap {
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 270px;
+    height: 132px;
+
+    background-color: #A98AFF;
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.laporan_main_inap:hover {
+    cursor: pointer;
+}
+
+.laporan_main_num {
+    font-size: 20px;
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.laporan_main_grid_base {
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.laporan_main_grid {
+    display: grid;
+    height: 380px;
+    margin-top: 50px;
+
+    grid-template-columns: 210px 210px 210px 210px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+}
+
+.laporan_main_grid_container_content {
+    font-family: 'Poppins';
+    margin: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.schedule_calendar_grid_container_top {
+    border: 0.1px solid black;
+    background-color: #C9EEB2;
+    text-align: center;
+    font-weight: 600;
+}
+
+.laporan_main_grid_container_content_diagnosis {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.laporan_main_grid_container_content_diagnosis:hover {
+    cursor: pointer;
+}
 
 /*
 For Testing
