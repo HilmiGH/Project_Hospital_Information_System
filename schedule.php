@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="schedule_upcoming_activities_base">
     <div class="schedule_upcoming_activities_content">
         <div class="schedule_upcoming_activities_title">
@@ -464,4 +464,4 @@
         </div>
     </div>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

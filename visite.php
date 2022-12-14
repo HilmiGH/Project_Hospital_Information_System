@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="konsultasi_nomor_urut_pasien_base">
     <div class="konsultasi_nomor_urut_pasien_title">
         Jadwal Visite
@@ -94,4 +94,4 @@
         </div>
     </div>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

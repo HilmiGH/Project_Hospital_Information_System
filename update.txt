@@ -4,7 +4,7 @@ V 0.0.2.8
 [14/12/2022 10:23]
 - Updated script.js
 	For buat janji page
-- Updated buat_janji.php
+- Updated menu_buat_janji.php
 	Interactive UI
 - Updated style.css
   Animation and for buat janji page

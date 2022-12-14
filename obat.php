@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <hr class="obat_hr">
 <div class="obat_heading">Nama Dokter:</div>
 <div class="obat_subheading">dr. Gugu Gaga <span class="obat_body"> - Dokter Umum</span> </div>
@@ -19,4 +19,4 @@
 <div class="obat_subheading obat_tab">Rp 19.600 Per Strip X 3 
     <span class="obat_subheading obat_right">Rp 58.800</span>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="rujukan_content">
     <div class="rujukan_nama_pasien">
         Pasien
@@ -28,4 +28,4 @@
         <span>Buat Rujukan</span>
     </button>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

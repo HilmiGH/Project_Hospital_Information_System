@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="pasien_content">
     <div class="pasien_content_title">Poliklinik</div>
     <form  action="" class="pasien_content_poliklinik_input_base" method="post">
@@ -50,4 +50,4 @@
         </tr>
     </table>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

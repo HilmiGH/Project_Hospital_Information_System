@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <hr class="obat_hr">
 <div class="data_title">Jadwal Jaga Dokter RS Bhayangkara </div>
 <div class="data_title">Desember 2022</div>
@@ -367,4 +367,4 @@
     <div class="data_body">M : Malam (21.00 - 07.00 WIB)</div>
     <div class="data_body">L : Libur</div>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

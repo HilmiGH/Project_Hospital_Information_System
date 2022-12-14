@@ -49,7 +49,7 @@
         </div>
         <div class="konsultasi_informasi_pasien_footer_Buat_Surat">
             Buat Surat
-            <a href="menu_buat_surat.php">
+            <a href="buat_surat.php">
                 <button class="konsultasi_informasi_pasien_footer_Rujukan_button">
                     <img class="konsultasi_informasi_pasien_footer_Rujukan_image" src="images/konsultasi_right_arrow.png" alt="">
                 </button>

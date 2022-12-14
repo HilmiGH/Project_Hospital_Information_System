@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="profile_main_profile">
     <img class="profile_main_logo" src="images/profile_logo.png" alt="Profile Photo">
     <div class="profile_main_name">Nama</div>
@@ -52,4 +52,4 @@
         <div class="profile_info_golongan_darah_value">A</div>
     </div>     
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

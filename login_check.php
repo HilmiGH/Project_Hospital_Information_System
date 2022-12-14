@@ -11,9 +11,8 @@
         if($data){
             $nextpage = ['manajer', 'dokter', 'nakes', 'nonnakes', 'mitra', 'pasien'];
             $role = $nextpage[intdiv($data['ROLE_ID'], 10) - 1];
-            $loc = 'index_'.$role.'.php';
             $_SESSION['ROLE'] = $role;
-            header('location:'.$loc);
+            header('location:index.php');
         } else {
          //connect('fp_pweb_inti', 'INSERT INTO USER )
         }

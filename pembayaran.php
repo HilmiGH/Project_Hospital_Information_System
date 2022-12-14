@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="pembayaran_title">
     <img class="pembayaran_title_logo" src="images/pembayaran_logo.png" alt="">
     <div class="pembayaran_title_text">Rincian Pembayaran</div>
@@ -52,4 +52,4 @@
         </details>
     </div>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

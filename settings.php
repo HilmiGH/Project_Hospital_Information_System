@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="settings_option_base">
     <img class="settings_dark_mode_image" src="images/settings_dark_mode_logo.png" alt="">
     <div class="settings_dark_mode_title">Dark Mode</div>
@@ -21,4 +21,4 @@
             </select>
     </form>
 </div>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

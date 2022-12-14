@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <div class="feedback_title">
     <div class="feedback_title_text">Bagaimana kepuasan Anda terhadap kami?</div>
 </div>
@@ -125,4 +125,4 @@
 <form  action="" class="feedback_comment_input_base" method="post">
     <input type="text" class="feedback_comment_input">
 </form>
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>

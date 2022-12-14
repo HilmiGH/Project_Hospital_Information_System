@@ -1,4 +1,4 @@
-<?php require_once 'header1.php';?>
+<?php require_once 'header.php';?>
 <script src="js/script.js"></script>
 <div class="janji_btn_base">
     <div><button class="janji_poli_btn" id="poliklinik_btn" onclick="poli_show()">Poliklinik</button></div>
@@ -114,4 +114,4 @@
         <span>Cari</span>
     </button>
 </div>        
-<?php require_once 'footer1.php';?>
+<?php require_once 'footer.php';?>
