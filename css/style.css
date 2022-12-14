@@ -2004,8 +2004,8 @@ sharing with : pasien
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    background: #b5cbeb63;
-    border: 2px solid #b5cbeb63;
+    background: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -2013,6 +2013,11 @@ sharing with : pasien
 
 .janji_poli_btn:hover{
     cursor: pointer;
+}
+
+.janji_poli_btn:focus{
+    background: #b5cbeb63;
+    border: 2px solid #b5cbeb63;
 }
 
 .janji_labo_btn {
@@ -2036,6 +2041,11 @@ sharing with : pasien
     cursor: pointer;
 }
 
+.janji_labo_btn:focus{
+    background: #b5cbeb63;
+    border: 2px solid #b5cbeb63;
+}
+
 .janji_fisi_btn {
     font-size: xx-large;
     width: 330px;
@@ -2057,7 +2067,40 @@ sharing with : pasien
     cursor: pointer;
 }
 
-.janji_content {
+.janji_fisi_btn:focus{
+    background: #b5cbeb63;
+    border: 2px solid #b5cbeb63;
+}
+
+.janji_content_poliklinik {
+    padding: 40px;
+    float: left;
+    margin-left: 30px;
+    width: 870px;
+    height: 450px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.janji_content_laboratorium {
+    display: none;
+    padding: 40px;
+    float: left;
+    margin-left: 30px;
+    width: 870px;
+    height: 450px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.janji_content_fisioterapi {
+    display: none;
     padding: 40px;
     float: left;
     margin-left: 30px;
@@ -2320,6 +2363,168 @@ For Obat Page
     margin-top: 4px;
     margin-left: 58px;
 }
+
+/*
+    history page
+*/
+
+.history_content{
+    margin-top: 20px;
+    padding: 40px;
+    height: 350px;
+
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.history_jangka_waktu_base{
+    position: relative;
+    left: 950px;
+    width: 200px;
+}
+
+.history_jangka_waktu_title{
+    position: relative;
+    margin-bottom: 10px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3988FF;
+}
+
+.history_jangka_waktu_custom_select[open] {
+	z-index: 1;
+}
+
+.history_jangka_waktu_radios {
+	padding: 1rem;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #ddd;
+	list-style: none;
+}
+
+.history_jangka_waktu_radios::-webkit-details-marker {
+	display: none;
+}
+
+.history_jangka_waktu_custom_select[open] .history_jangka_waktu_radios:before {
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.history_jangka_waktu_radios:after {
+	content: '';
+	display: inline-block;
+	float: right;
+	width: .5rem;
+	height: .5rem;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(45deg) translate(50%, 0%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms
+}
+
+.history_jangka_waktu_radios:focus {
+	outline: none;
+}
+
+.history_jangka_waktu_custom_select[open] .history_jangka_waktu_radios:after {
+	transform: rotate(-45deg) translate(0%, 0%);
+}
+
+.history_jangka_waktu_list {
+	width: 100%;
+	background: #ddd;
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.history_jangka_waktu_sublist {
+	margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.history_jangka_waktu_sublist:first-child {
+	padding-top: 0;
+}
+
+.history_jangka_waktu_sublist:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+#history_jangka_waktu_default{
+    font-family: 'Poppins';
+}
+
+/* FAKE SELECT */
+
+.history_jangka_waktu_radios.radios {
+	counter-reset: radios;
+}
+
+.history_jangka_waktu_radios.radios:before {
+	content: var(--selection);
+}
+
+input[type=radio] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+}
+
+input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+
+input[type=radio]:after {
+	content: attr(title);
+	display: inline;
+	font-size: 1rem;
+}
+
+.history_jangka_waktu_list.list {
+	counter-reset: labels;
+}
+
+.history_jangka_waktu_label {
+    font-family: 'Poppins';
+	width: 100%;
+	display: flex;
+	cursor: pointer;
+	justify-content: space-between;
+}
+
+.history_jangka_waktu_label span {
+	--display: none;
+	display: var(--display);
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #727272;
+	border-radius: 3px;
+}
+
 
 /*
 For Testing
