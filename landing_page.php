@@ -24,9 +24,11 @@
             <a class="landing_page_nav_text" href="">Kontak</a>
         </div>
         <div class="landing_page_nav_button">
-            <button class="landing_page_login_button">
-                Login
-            </button>
+            <a class="landing_page_nav_text" href="login.php">
+                <button class="landing_page_login_button">
+                    Login
+                </button>
+            </a>
         </div>
     </div>
     <div class="system_information_header_line"></div>

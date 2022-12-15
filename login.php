@@ -4,9 +4,11 @@
 <body>
     <div class="login_background">
         <div class="login_middle_container">
-            <button class="login_close_button_base" onclick="">
-                <img class="login_close_button" src="images/login_close_button.png" alt="close button">
-            </button>
+            <a href="landing_page.php">
+                <button class="login_close_button_base" onclick="">
+                    <img class="login_close_button" src="images/login_close_button.png" alt="close button">
+                </button>
+            </a>
             <div class="login_title">
                 Login/Register
             </div>
