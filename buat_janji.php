@@ -1,9 +1,10 @@
 <?php require_once 'header.php';?>
-<script src="js/script.js"></script>
+
 <div class="janji_btn_base">
     <div><button class="janji_poli_btn" id="poliklinik_btn" onclick="poli_show()">Poliklinik</button></div>
     <div><button class="janji_labo_btn" id="laboratorium_btn" onclick="lab_show()">Laboratorium</button></div>
     <div><button class="janji_fisi_btn" id="fisioterapi_btn" onclick="fisio_show()">Fisioterapi</button></div>
+    <script src="js/script.js"></script>
 </div>
 <div class="janji_content_poliklinik" id="janji_poliklinik">
     <div class="janji_nama_pasien">
@@ -114,4 +115,5 @@
         <span>Cari</span>
     </button>
 </div>        
+
 <?php require_once 'footer.php';?>

@@ -3,7 +3,7 @@
     require_once 'head.php';
     echo '<body>';
     
-    require_once 'logout.php';
+    require_once 'top.php';
     // Navigation
     echo 
     '<div class="konsultasi_title_navigation">

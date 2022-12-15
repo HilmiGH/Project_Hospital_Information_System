@@ -1,5 +1,6 @@
 <?php require_once 'session.php';?>
 <?php require_once 'head.php';?>
+
 <body>
     <div class="login_background">
         <div class="login_middle_container">
@@ -21,12 +22,14 @@
             <div class="login_input_and_button">
                 <form  action="login.php" class="login_phone_input_base" method="post">
                     <input type="text" name="num" class="login_phone_input" id="login_phone_input" placeholder="+62">
+                
                     
-                <a href="login_otp.php" class="login_button_clickable">
-                    <button class="login_button" name="login" type="button" onclick="">
-                        <span>LANJUTKAN</span>
-                    </button>
-                </a>
+                    <a href="" class="login_button_clickable">
+                        <button class="login_button" name="login" type="submit" onclick="">
+                            <span>LANJUTKAN</span>
+                        </button>
+                    </a>
+                    <?php include 'login_check.php';?>
                 </form>
                 
             </div>

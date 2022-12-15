@@ -23,11 +23,12 @@
                     <button class="login_otp_kirim_ulang_otp_button">
                         Kirim ulang OTP
                     </button>
-                <a href="index_dokter.php" class="login_otp_button_clickable">
+                <a href="index.php" class="login_otp_button_clickable">
                     <button class="login_otp_button" type="button" onclick="">
                         LANJUTKAN
                     </button>
                 </a>
+                <?php require_once 'login_otp_check.php';?> 
             </div>
         </div>
     </div>

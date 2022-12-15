@@ -4,15 +4,7 @@
     // HTML head
     require_once 'head.php';
     // Header
-    echo
-        '<div class="system_information_header">
-            <span class="system_information_logo">Your logo</span>
-            <a href="login.php">
-                <img class="system_information_logout_button" src="images/dashboard_logout_button.png" alt="log out button">
-            </a>
-        </div>
-        <div class="system_information_header_line"></div>';
-    echo '<div class="konsultasi_content">';
+    require_once 'top.php';
 
     echo '<body>';
 
@@ -24,7 +16,7 @@
             <span class="greeting">
                 <strong>Selamat Datang!</strong>
                 <br />
-                Nama Pasien
+                Nama '.$role.'
             </span>
         </div>';
 
@@ -40,11 +32,11 @@
 
     // Customize dashboard based on user role
     $access = [
-        'manajer' => ['data_manajer', 'penugasan'],
+        'manajer' => ['data','penugasan'],
         'dokter'  => ['konsultasi', 'visite', 'rujukan', 'buat surat'],
         'nakes'   => ['pasien', 'dokter jaga'],
-        'nonnakes'=> ['data_nakes', 'permintaan'],
-        'mitra'   => ['data_mitra', 'klaim'],
+        'nonnakes'=> ['data','permintaan'],
+        'mitra'   => ['data','klaim'],
         'pasien'  => ['buat janji', 'obat', 'pembayaran', 'feedback']
     ];
     $common  = ['laporan', 'profile', 'schedule', 'history', 'settings', 'about'];
