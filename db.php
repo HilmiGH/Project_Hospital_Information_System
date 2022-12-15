@@ -9,7 +9,7 @@
             ]);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $data = $conn->query($query);
-            $result = $data->fetch();
+            $result = $data->fetchAll();
             return $result;
             echo "<script> alert(".gettype($result).") </script>";
 

@@ -34,7 +34,7 @@
     $access = [
         'manajer' => ['data','penugasan'],
         'dokter'  => ['konsultasi', 'visite', 'rujukan', 'buat surat'],
-        'nakes'   => ['pasien', 'dokter jaga'],
+        'nakes'   => ['pasien', 'dokter_jaga'],
         'nonnakes'=> ['data','permintaan'],
         'mitra'   => ['data','klaim'],
         'pasien'  => ['buat janji', 'obat', 'pembayaran', 'feedback']

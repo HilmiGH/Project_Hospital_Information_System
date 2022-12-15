@@ -4,14 +4,21 @@
     <div><button class="janji_poli_btn" id="poliklinik_btn" onclick="poli_show()">Poliklinik</button></div>
     <div><button class="janji_labo_btn" id="laboratorium_btn" onclick="lab_show()">Laboratorium</button></div>
     <div><button class="janji_fisi_btn" id="fisioterapi_btn" onclick="fisio_show()">Fisioterapi</button></div>
-    <script src="js/script.js"></script>
+    
 </div>
 <div class="janji_content_poliklinik" id="janji_poliklinik">
     <div class="janji_nama_pasien">
         Lokasi Rumah Sakit
         <form  action="" class="janji_jenis_input_base" method="post">
             <select class="janji_jenis_surat" name="" id="">
-                <option value=""></option>
+            <?php 
+                    require_once 'db.php';
+                    $data = connect('fp_pweb_rumahsakit', 'SELECT NAMA FROM rumahsakit WHERE ID IN (SELECT RS_ID FROM bhayangkara)');
+                    $len = count($data);
+                    foreach($data as $d){
+                        echo '<option value="'.$d.'">'.$d['NAMA'].'</option>';
+                    }   
+            ?>
             </select>
         </form>
     </div>
@@ -19,7 +26,14 @@
         Klinik
         <form  action="" class="janji_jenis_input_base" method="post">
             <select class="janji_jenis_surat" name="" id="">
-                <option value=""></option>
+            <?php 
+                    require_once 'db.php';
+                    $data = connect('fp_pweb_inti', 'SELECT NAMA FROM poliklinik');
+                    $len = count($data);
+                    foreach($data as $d){
+                        echo '<option value="'.$d.'">'.$d['NAMA'].'</option>';
+                    }   
+            ?>
             </select>
         </form>
     </div>
@@ -41,7 +55,14 @@
         Penjaminan
         <form  action="" class="janji_jenis_input_base" method="post">
             <select class="janji_jenis_surat" name="" id="">
-                <option value=""></option>
+            <?php 
+                    require_once 'db.php';
+                    $data = connect('fp_pweb_inti', 'SELECT NAMA FROM penjaminan');
+                    $len = count($data);
+                    foreach($data as $d){
+                        echo '<option value="'.$d.'">'.$d['NAMA'].'</option>';
+                    }   
+            ?>
             </select>
         </form>
     </div>
@@ -115,5 +136,5 @@
         <span>Cari</span>
     </button>
 </div>        
-
+<script src="js/script.js"></script>
 <?php require_once 'footer.php';?>
